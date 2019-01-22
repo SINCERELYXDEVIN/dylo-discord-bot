@@ -3,6 +3,7 @@ const bot = new Commando.Client({
     commandPrefix: "d,"
     })
 const discord = require('discord.js');
+const TOKEN = 'NTM2MDQyNzUyOTU0MjA0MTYw.DyQ-2w.YrDIjYt7vt7_GniN-9BRLcXgGMQ'
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
@@ -35,4 +36,4 @@ bot.on('ready',function(){
     bot.user.setActivity("d,help | d,info", {type: 'STREAMING'})
 })
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(TOKEN);
