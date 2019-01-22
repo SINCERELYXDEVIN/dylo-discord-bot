@@ -35,4 +35,4 @@ bot.on('ready',function(){
     bot.user.setActivity("d,help | d,info", {type: 'STREAMING'})
 })
 
-bot.login(TOKEN);
+client.login(process.env.BOT_TOKEN);
